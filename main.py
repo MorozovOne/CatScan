@@ -54,7 +54,7 @@ def scan_ports_and_services(target):
     open_ports = []
 
     with ThreadPoolExecutor(max_workers=200) as executor:  # Увеличьте количество потоков
-        future_to_port = {executor.submit(scan_port, target, port): port for port in range(1, 1024)}
+        future_to_port = {executor.submit(scan_port, target, port): port for port in range(1, 10240)}
         for future in as_completed(future_to_port):
             result = future.result()
             if result:
