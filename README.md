@@ -3,7 +3,7 @@
 Инструмент создан в научных и обучающих целях а также для тестирования
 
 Установка
-- git clone https://github.com/MorozovOne/CatScan/tree/main
+- git clone https://github.com/MorozovOne/CatScan
 - cd CatScan
 - pip install -r requirements.txt
 - python main.py
